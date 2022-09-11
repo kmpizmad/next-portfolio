@@ -2,11 +2,20 @@ import type { GetStaticPropsContext, NextPage } from 'next';
 // import styles from '../styles/modules/Home.module.scss';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import TranslateButton from '../components/TranslateButton';
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common');
 
-  return <div>{t('home_title')}</div>;
+  return (
+    <div className="flex flex-col">
+      <div className="flex gap-2">
+        <TranslateButton targetLanguage="en" />
+        <TranslateButton targetLanguage="hu" />
+      </div>
+      <div>{t('home_title')}</div>
+    </div>
+  );
 };
 
 export default Home;
