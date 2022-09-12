@@ -1,0 +1,113 @@
+{
+  "education": [
+    {
+      "title": "Szoftverfejlesztő 54 213 05",
+      "type": "OKJ",
+      "at": "RUANDER Oktatási Kft.",
+      "from": "2021-03",
+      "to": "2022-05",
+      "description": ""
+    },
+    {
+      "title": "Programtervező informatikus",
+      "type": "Alapképzés",
+      "at": "ELTE - PTI",
+      "from": "2021-09",
+      "to": "2022-05",
+      "description": "Távoktatásból eredő nehézségek miatt nem fejeztem be"
+    },
+    {
+      "title": "Computer Science Engineer",
+      "type": "Alapképzés",
+      "at": "Óbudai Egyetem - NIK",
+      "from": "2017-09",
+      "to": "2021-05",
+      "description": "Fizikával kapcsolatos tantárgyi nehézségek miatt nem tudtam befejezni"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Docker Crash Course",
+      "course": "https://www.udemy.com/course/docker-tutorial-for-devops-run-docker-containers/",
+      "link": "https://drive.google.com/drive/folders/1EpvwV-xSRmmnCn533lwzO-hPhjPrxLhg",
+      "completed": "2022-08"
+    },
+    {
+      "name": "REST APIs with Flask and Python",
+      "course": "https://www.udemy.com/course/rest-api-flask-and-python/",
+      "link": "https://drive.google.com/file/d/1mqQlRGLsrvFPiT-ybomAjTG_Sn0HW84v/view?usp=sharing",
+      "completed": "2022-07"
+    },
+    {
+      "name": "Advanced REST APIs with Flask and Python",
+      "course": "https://www.google.com/url?q=https://www.udemy.com/course/advanced-rest-apis-flask-python/",
+      "link": "https://drive.google.com/drive/folders/1EpvwV-xSRmmnCn533lwzO-hPhjPrxLhg",
+      "completed": "2022-08"
+    },
+    {
+      "name": "The Complete Web Development Bootcamp",
+      "course": "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
+      "link": "https://drive.google.com/file/d/1FaiiMMSvszlADB7s-dKDkmMCPds8Cr-X/view?usp=sharing",
+      "completed": "2020-08"
+    },
+    {
+      "name": "AZ-104",
+      "course": "",
+      "link": "https://drive.google.com/drive/folders/1EpvwV-xSRmmnCn533lwzO-hPhjPrxLhg",
+      "completed": "2022-04"
+    }
+  ],
+  "skills": [
+    { "name": "JavaScript", "level": 5 },
+    { "name": "TypeScript", "level": 5 },
+    { "name": "CSS", "level": 5 },
+    { "name": "SCSS", "level": 4 },
+    { "name": "Node.js", "level": 4 },
+    { "name": "Python", "level": 3 },
+    { "name": "Angular2+", "level": 3 },
+    { "name": "React", "level": 3 },
+    { "name": "Next.js", "level": 2 },
+    { "name": "Flask", "level": 2 },
+    { "name": "Git", "level": 4 },
+    { "name": "CI/CD", "level": 3 }
+  ],
+  "experience": [
+    {
+      "title": "Frontend fejlesztő",
+      "company": "Magyar Közút Nonprofit Zrt.",
+      "from": "2018-03",
+      "to": "2022-09",
+      "current": false,
+      "tasks": [
+        "Főldal fejlesztése és karbantartása: https://internet.kozut.hu/",
+        "Karrier oldal karbantartása: https://karrier.kozut.hu",
+        "Belső fejlesztésű könyvtárak létrehozása",
+        "Belső fejlesztésű web applikációk létrehozása"
+      ]
+    },
+    {
+      "title": "Frontend fejlesztő",
+      "company": "Fotexnet Kft.",
+      "from": "2022-09",
+      "to": "",
+      "current": true,
+      "tasks": []
+    }
+  ],
+  "languages": [
+    { "name": "Magyar", "level": "Anyanyelvi" },
+    { "name": "Angol", "level": "Haladó szint" }
+  ],
+  "socials": [
+    { "site": "StackOverflow", "url": "https://stackoverflow.com/users/13747848/kmp" },
+    { "site": "GitHub", "url": "https://github.com/kmpizmad/" },
+    { "site": "LinkedIn", "url": "https://www.linkedin.com/in/viktor-nagy-07672a246/" }
+  ],
+  "info": {
+    "name": "Nagy Viktor",
+    "qualification": "Szoftverfejlesztő",
+    "location": "Budapest, Magyarország",
+    "email": "nagy.viktor392@gmail.com",
+    "imageUrl": ""
+  }
+}
