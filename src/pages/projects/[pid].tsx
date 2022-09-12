@@ -3,6 +3,7 @@ import type { GetStaticPaths, GetStaticPropsContext, NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import type { UnkownProps } from '../../types/UnkownProps';
 
 const Project: NextPage = () => {
   const { query } = useRouter();
@@ -17,7 +18,7 @@ const Project: NextPage = () => {
 
 export default Project;
 
-export async function getStaticProps(context: GetStaticPropsContext) {
+export async function getStaticProps(context: GetStaticPropsContext): Promise<UnkownProps> {
   return {
     props: {
       ...(await serverSideTranslations(context.locale || 'en', ['common'])),

@@ -3,6 +3,7 @@ import type { GetStaticPropsContext, NextPage } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import TranslateButton from '../components/TranslateButton';
+import type { UnkownProps } from '../types/UnkownProps';
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common');
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
 
 export default Home;
 
-export async function getStaticProps(context: GetStaticPropsContext) {
+export async function getStaticProps(context: GetStaticPropsContext): Promise<UnkownProps> {
   return {
     props: {
       ...(await serverSideTranslations(context.locale || 'en', ['common'])),
