@@ -7,7 +7,7 @@ interface Props {
 
 const TranslateButton: React.FC<Props> = props => {
   const router = useRouter();
-  const target = `${props.targetLanguage}/${router.pathname}`;
+  const target = props.targetLanguage + router.pathname;
 
   return (
     <Link href={target} locale={props.targetLanguage}>
