@@ -2,5 +2,12 @@
   "resume_title": "Önéletrajz",
   "home_title": "Főoldal",
   "projects_title": "Projektek",
-  "project_title": "Aktuális projekt id"
+  "project_title": "Aktuális projekt id",
+  "current_job_label": "Jelenleg",
+  "education_title": "Tanulmányok",
+  "certificates_title": "Bizonyítványok",
+  "skills_title": "Készségek",
+  "experience_title": "Tapasztalat",
+  "languages_title": "Nyelvismeretek",
+  "socials_title": "Közösségi oldalak"
 }
