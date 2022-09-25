@@ -12,7 +12,7 @@ const HeaderSection: React.FC<IProps> = props => {
   return (
     <div className="p-3 flex justify-between items-center ">
       <div className="flex flex-col justify-between w-full">
-        <div className="mb-4 uppercase leading-tight">
+        <div className="mb-4 uppercase leading-tight text-gray-700">
           <h1 className="font-semibold text-5xl mt-0 mb-2">{props.info.name}</h1>
           <h2 className="font-light tracking-widest text-4xl mt-0 mb-2">{props.info.qualification}</h2>
         </div>

@@ -11,7 +11,7 @@ const SocialSection: React.FC<WithTitleProps> = () => {
     <>
       <Social
         site={
-          <div className="w-[30px] h-[30px] bg-[#555] text-white rounded-full">
+          <div className="w-[30px] h-[30px] bg-green-600 text-white rounded-full">
             <Phone className="w-[30px] h-[30px] p-[6px]" />
           </div>
         }

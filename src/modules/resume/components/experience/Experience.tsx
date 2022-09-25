@@ -18,9 +18,9 @@ const Experience: React.FC<Props & IExperience> = props => {
           <div className="text-lg">{props.company}</div>
         </div>
         <div
-          className={`${styles['box-borders']} w-full px-4 py-2 border-r-[3px] border-l-[3px] bg-[length:8px_3px] border-purple-500 from-purple-500 to-purple-500`}
+          className={`${styles['box-borders']} w-full px-4 py-2 border-r-[3px] border-l-[3px] bg-[length:8px_3px] border-gray-600 from-gray-600 to-gray-600`}
         >
-          <ul className="list-dash list-inside text-sm text-gray-500 marker:text-purple-500">
+          <ul className="list-dash list-inside text-sm text-gray-500">
             {props.tasks.map(task => (
               <li key={nanoid()}>{task}</li>
             ))}
