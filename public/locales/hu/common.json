@@ -3,11 +3,11 @@
   "home_title": "Főoldal",
   "projects_title": "Projektek",
   "project_title": "Aktuális projekt id",
-  "current_job_label": "Jelenleg",
+  "current_label": "Jelenleg",
   "education_title": "Tanulmányok",
   "certificates_title": "Bizonyítványok",
-  "skills_title": "Készségek",
-  "experience_title": "Tapasztalat",
+  "skills_title": "Technológiák",
+  "experience_title": "Munkatapasztalat",
   "languages_title": "Nyelvismeretek",
-  "socials_title": "Közösségi oldalak"
+  "socials_title": "Elérhetőségek"
 }

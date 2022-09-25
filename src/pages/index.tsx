@@ -2,7 +2,7 @@ import type { GetStaticPropsContext, NextPage } from 'next';
 // import styles from '../styles/modules/Home.module.scss';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
-import TranslateButton from '../components/TranslateButton';
+import TranslateButton from '../modules/common/components/TranslateButton';
 import type { UnkownProps } from '../types/UnkownProps';
 
 const Home: NextPage = () => {

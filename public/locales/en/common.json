@@ -3,11 +3,11 @@
   "home_title": "Home Page",
   "projects_title": "Projects Page",
   "project_title": "Current project id",
-  "current_job_label": "Currently",
+  "current_label": "Present",
   "education_title": "Education",
   "certificates_title": "Certificates",
   "skills_title": "Skills",
   "experience_title": "Experiences",
   "languages_title": "Languages",
-  "socials_title": "Community sites"
+  "socials_title": "Contacts & communities"
 }

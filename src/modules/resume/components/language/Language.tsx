@@ -1,4 +1,4 @@
-import ILanguage from '../interfaces/resume/ILanguage';
+import ILanguage from '../../../../interfaces/resume/ILanguage';
 
 const Language: React.FC<ILanguage> = props => {
   return (

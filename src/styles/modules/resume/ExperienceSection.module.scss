@@ -1,0 +1,7 @@
+.box-borders {
+  $gradient: linear-gradient(var(--tw-gradient-from), var(--tw-gradient-stops));
+
+  background-repeat: no-repeat;
+  background-position: top right, top left, bottom right, bottom left;
+  background-image: $gradient, $gradient, $gradient, $gradient;
+}

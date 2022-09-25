@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ICertificate from '../interfaces/resume/ICertificate';
+import ICertificate from '../../../../interfaces/resume/ICertificate';
 
 const Certificate: React.FC<ICertificate> = props => {
   return (
@@ -17,7 +17,9 @@ const Certificate: React.FC<ICertificate> = props => {
           </Link>
         </span>
       </div>
-      <div className="text-sm text-gray-500">{props.completed}</div>
+      <div className="text-sm text-gray-500">
+        {props.completed.toLocaleString('en-US', { year: 'numeric', month: '2-digit' })}
+      </div>
     </div>
   );
 };

@@ -1,8 +1,9 @@
 export default interface IEducation {
   title: string;
   type: string;
-  at: string;
+  school: string;
   from: string;
   to: string;
+  current: boolean;
   description: string;
 }

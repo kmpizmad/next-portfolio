@@ -1,4 +1,5 @@
 export default interface ISocial {
-  site: string;
+  site: JSX.Element;
   url: string;
+  mail?: boolean;
 }
