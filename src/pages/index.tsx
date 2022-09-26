@@ -11,8 +11,8 @@ const Home: NextPage = () => {
   return (
     <div className="flex flex-col">
       <div className="flex gap-2">
-        <TranslateButton targetLanguage="en" />
-        <TranslateButton targetLanguage="hu" />
+        <TranslateButton targetLanguage="en" countryCode="US" />
+        <TranslateButton targetLanguage="hu" countryCode="HU" />
       </div>
       <div>{t('home_title')}</div>
     </div>
