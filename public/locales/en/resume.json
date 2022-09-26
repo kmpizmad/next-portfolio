@@ -36,9 +36,9 @@
       "to": "09/2022",
       "current": false,
       "tasks": [
-        "Creation and maintenance of https://internet.kozut.hu/",
-        "Creation of internal libraries",
-        "Creation of internal web applications"
+        "Creation and maintenance of main website with WordPress",
+        "Creation of internal libraries with Angular framework",
+        "Creation of internal web applications with Angular framework"
       ]
     },
     {

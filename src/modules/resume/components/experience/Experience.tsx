@@ -12,7 +12,7 @@ const Experience: React.FC<Props & IExperience> = props => {
       <div className="w-1/3 font-light">
         {props.from} - {props.current ? props.labelCurrent : props.to}
       </div>
-      <div className="w-2/3 -ml-2">
+      <div className="w-2/3">
         <div className="mb-2">
           <div className="text-xl font-semibold uppercase">{props.title}</div>
           <div className="text-lg">{props.company}</div>

@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Flag from 'react-country-flag';
 
 interface Props {
   targetLanguage: string;
+  countryCode: string;
 }
 
 const TranslateButton: React.FC<Props> = props => {
@@ -11,7 +13,17 @@ const TranslateButton: React.FC<Props> = props => {
 
   return (
     <Link href={target} locale={props.targetLanguage}>
-      <a>{props.targetLanguage}</a>
+      <a>
+        <Flag
+          countryCode={props.countryCode}
+          svg
+          title={props.countryCode}
+          style={{
+            width: '20px',
+            height: '20px',
+          }}
+        />
+      </a>
     </Link>
   );
 };

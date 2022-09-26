@@ -1,8 +1,8 @@
 import React from 'react';
 import ISkill from '../interfaces/resume/ISkill';
 import {
-  JavascriptPlainIcon,
-  TypescriptPlainIcon,
+  JavascriptOriginalIcon,
+  TypescriptOriginalIcon,
   Css3PlainIcon,
   SassOriginalIcon,
   NodejsPlainIcon,
@@ -21,8 +21,8 @@ const svgProps = {
 // TODO: get icons for languages
 
 export const skills: ISkill[] = [
-  { name: 'JavaScript', level: 5, icon: <JavascriptPlainIcon {...svgProps} /> },
-  { name: 'TypeScript', level: 5, icon: <TypescriptPlainIcon {...svgProps} /> },
+  { name: 'JavaScript', level: 5, icon: <JavascriptOriginalIcon {...svgProps} /> },
+  { name: 'TypeScript', level: 5, icon: <TypescriptOriginalIcon {...svgProps} /> },
   { name: 'CSS', level: 5, icon: <Css3PlainIcon {...svgProps} /> },
   { name: 'SCSS', level: 4, icon: <SassOriginalIcon {...svgProps} /> },
   { name: 'Node.js', level: 4, icon: <NodejsPlainIcon {...svgProps} /> },

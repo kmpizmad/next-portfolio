@@ -36,9 +36,9 @@
       "to": "09/2022",
       "current": false,
       "tasks": [
-        "Főldal fejlesztése és karbantartása: https://internet.kozut.hu",
-        "Belső fejlesztésű könyvtárak létrehozása",
-        "Belső fejlesztésű web applikációk létrehozása"
+        "Főldal fejlesztése és karbantartása WordPress alapon",
+        "Belső fejlesztésű könyvtárak létrehozása Angular keretrendszerben",
+        "Belső fejlesztésű web applikációk létrehozása Angular keretrendszerben"
       ]
     },
     {

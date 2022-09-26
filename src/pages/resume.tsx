@@ -30,7 +30,7 @@ const Resume: NextPage = () => {
 
     toPng(resumeRef.current, { quality: 0.95 }).then(imgData => {
       const pdf = new Pdf();
-      pdf.addImage(imgData, 'JPEG', 5, 5, 200, 230);
+      pdf.addImage(imgData, 'JPEG', 5, 5, 200, 220);
       pdf.save(nanoid() + '.pdf');
     });
   };
@@ -39,9 +39,9 @@ const Resume: NextPage = () => {
     <ResumeLayout>
       <div className="flex flex-col">
         <div className="flex justify-between mb-12">
-          <div className="flex gap-2">
-            <TranslateButton targetLanguage="en" />
-            <TranslateButton targetLanguage="hu" />
+          <div className="flex items-center gap-2">
+            <TranslateButton targetLanguage="en" countryCode="US" />
+            <TranslateButton targetLanguage="hu" countryCode="HU" />
           </div>
           <div className="flex gap-2">
             <ActionButton
@@ -66,7 +66,7 @@ const Resume: NextPage = () => {
         </div>
         <div ref={resumeRef} className="py-4 px-8 bg-white">
           <HeaderSection info={t_resume('info', { returnObjects: true })} />
-          <div className="grid grid-cols-[40%_minmax(0,1fr)] gap-12">
+          <div className="grid grid-cols-[43%_minmax(0,1fr)] gap-6">
             <div className="flex flex-col">
               <SocialSection title={t_common('socials_title')} />
               <SkillSection title={t_common('skills_title')} />

@@ -4,7 +4,7 @@ import { SocialIcon, SocialIconProps } from 'react-social-icons';
 
 const svgProps: SocialIconProps = {
   className: 'w-[30px!important] h-[30px!important]',
-  // bgColor: '#555',
+  bgColor: '#555',
 };
 
 export const socials: ISocial[] = [

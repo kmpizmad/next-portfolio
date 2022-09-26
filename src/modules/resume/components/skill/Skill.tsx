@@ -10,10 +10,10 @@ const Skill: React.FC<ISkill> = props => {
   const currentLevel = createScale(props.level);
 
   return (
-    <div className="flex justify-between w-[75%]">
-      <div className="flex items-center gap-2">
-        <div>{props.icon}</div>
-        <div>{props.name}</div>
+    <div className="flex justify-between w-[80%]">
+      <div className="flex items-center gap-4">
+        {/* <div>{props.icon}</div> */}
+        <div className="font-light uppercase tracking-wide">{props.name}</div>
       </div>
       <div className="relative flex justify-start items-center">
         <div className="flex gap-2">
