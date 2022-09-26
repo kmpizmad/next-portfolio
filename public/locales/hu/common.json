@@ -3,11 +3,13 @@
   "home_title": "Főoldal",
   "projects_title": "Projektek",
   "project_title": "Aktuális projekt id",
-  "current_label": "Jelenleg",
   "education_title": "Tanulmányok",
   "certificates_title": "Bizonyítványok",
   "skills_title": "Technológiák",
   "experience_title": "Munkatapasztalat",
   "languages_title": "Nyelvismeretek",
-  "socials_title": "Elérhetőségek"
+  "socials_title": "Elérhetőségek",
+  "current_label": "Jelenleg",
+  "download": "Letöltés",
+  "print": "Nyomtatás"
 }

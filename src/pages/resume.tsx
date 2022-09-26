@@ -4,8 +4,11 @@ import { nanoid } from 'nanoid';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Pdf from 'jspdf';
+import Print from 'react-to-print';
 import { toPng } from 'html-to-image';
+import { Download, Printer } from 'react-feather';
 import TranslateButton from '../modules/common/components/TranslateButton';
+import ActionButton from '../modules/common/components/ActionButton';
 import type { UnkownProps } from '../types/UnkownProps';
 import ResumeLayout from '../layouts/ResumeLayout';
 // import CertificateSection from '../modules/resume/components/certificate/CertificateSection';
@@ -27,7 +30,7 @@ const Resume: NextPage = () => {
 
     toPng(resumeRef.current, { quality: 0.95 }).then(imgData => {
       const pdf = new Pdf();
-      pdf.addImage(imgData, 'JPEG', 5, 5, 200, 220);
+      pdf.addImage(imgData, 'JPEG', 5, 5, 200, 230);
       pdf.save(nanoid() + '.pdf');
     });
   };
@@ -35,17 +38,33 @@ const Resume: NextPage = () => {
   return (
     <ResumeLayout>
       <div className="flex flex-col">
-        <div className="flex justify-between mb-8">
+        <div className="flex justify-between mb-12">
           <div className="flex gap-2">
             <TranslateButton targetLanguage="en" />
             <TranslateButton targetLanguage="hu" />
           </div>
           <div className="flex gap-2">
-            <button onClick={createPdf}>Download</button>
-            <button>Print</button>
+            <ActionButton
+              className="py-3 px-4 tracking-widest uppercase rounded text-white bg-red-700"
+              icon={<Download />}
+              onClick={createPdf}
+            >
+              {t_common('download')}
+            </ActionButton>
+            <Print
+              trigger={() => (
+                <ActionButton
+                  className="py-3 px-4 tracking-widest uppercase rounded text-white bg-red-700"
+                  icon={<Printer />}
+                >
+                  {t_common('print')}
+                </ActionButton>
+              )}
+              content={() => resumeRef.current}
+            />
           </div>
         </div>
-        <div ref={resumeRef} className="max-w-7xl self-center">
+        <div ref={resumeRef} className="py-4 px-8 bg-white">
           <HeaderSection info={t_resume('info', { returnObjects: true })} />
           <div className="grid grid-cols-[40%_minmax(0,1fr)] gap-12">
             <div className="flex flex-col">
